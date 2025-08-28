@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiquidLux | Premium Mobile Carwash</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00c3ff;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c3ff;
+    }
+
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    #hero {
+      background: url("https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=2000") center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 40px; /* moved button further down */
+    }
+
+    .btn {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px; /* extra space below buttons */
+    }
+
+    .btn-primary {
+      background: #00c3ff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #009bc2;
+    }
+
+    #about {
+      background: #ffffff;
+      color: #333;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    #services {
+      background: #f0f4f8;
+    }
+
+    #services h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #00c3ff;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    #contact {
+      background: #ffffff; /* now same as about */
+      color: #333;
+    }
+
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>LiquidLux</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Premium Mobile Carwash</h2>
+    <p>Luxury car care at your doorstep – because your time matters.</p>
+    <a href="#services"><button class="btn btn-primary">See Our Services</button></a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About LiquidLux</h2>
+    <p>At LiquidLux, we bring the carwash to you. Our premium mobile service is designed for everyday drivers who value convenience and quality. Whether you’re at home or work, our team delivers professional exterior and interior cleaning with a luxury finish — saving you time while giving your car the care it deserves.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Exterior Hand Wash</h3>
+        <p>Small Vehicle: <strong>R100</strong></p>
+        <p>Large Vehicle: <strong>R150</strong></p>
+      </div>
+      <div class="service-card">
+        <h3>Interior Cleaning</h3>
+        <p>Small Vehicle: <strong>R150</strong></p>
+        <p>Large Vehicle: <strong>R200</strong></p>
+      </div>
+      <div class="service-card">
+        <h3>Full Package</h3>
+        <p>Small Vehicle: <strong>R220</strong></p>
+        <p>Large Vehicle: <strong>R300</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Book your mobile wash today:</p>
+    <p><strong>Phone:</strong>+27 72 123 77 33</p>
+    <p><strong>Email:</strong> info@liquidlux.co.za</p>
+    <a href="https://wa.me/27721237733?text=Hi%20LiquidLux!%20I%20would%20like%20to%20book%20a%20car%20wash."><button class="btn btn-primary">Book via Whatsapp</button></a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LiquidLux. All Rights Reserved.</p>
+    <p>Made with ❤️ in Cape Town</p>
+  </footer>
+
+</body>
+</html>
+
